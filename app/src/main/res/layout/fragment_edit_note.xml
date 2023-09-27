@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.mynote.mvvm.NotesViewModel" />
+
+
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="30dp"
+        android:background="@color/bg_color"
+        android:orientation="vertical"
+        tools:context=".ui.adapter.fragments.EditNoteFragment">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:textColorHint="@color/white"
+            android:maxLines="1"
+            android:id="@+id/titleEt"
+            android:background="@drawable/edittextdesign"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:id="@+id/subet"
+            android:textColorHint="@color/white"
+            android:background="@drawable/edittextdesign"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:maxLines="10"
+            android:lines="15"
+            android:gravity="start"
+            android:textColorHint="@color/white"
+            android:id="@+id/noteEt"
+            android:background="@drawable/edittextdesign"/>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:id="@+id/updateNoteBtn"
+            android:layout_gravity="center"/>
+
+
+
+    </LinearLayout>
+
+</layout>
